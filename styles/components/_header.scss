@@ -1,0 +1,27 @@
+.header {
+  padding: 10rem 0;
+  background-color: $color-primary-light-1;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns:
+    minmax(5rem, 30rem) repeat(10, minmax(min-content, 12rem))
+    minmax(5rem, 30rem);
+
+  &__text-box {
+    grid-column: 2/8;
+
+    display: grid;
+    row-gap: 3rem;
+    justify-items: start;
+
+    p {
+      max-width: 85%;
+    }
+  }
+
+  &__illustration {
+    grid-column: 8 / -1;
+  }
+}

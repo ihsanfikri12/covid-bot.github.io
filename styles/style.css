@@ -23,11 +23,78 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 70vh (min-content)[2];
-      grid-template-rows: 70vh repeat(2, -webkit-min-content);
-      grid-template-rows: 70vh repeat(2, min-content);
-  -ms-grid-columns: minmax(6rem, 1fr) (minmax(min-content, 14rem))[10] minmax(6rem, 1fr);
-      grid-template-columns: minmax(6rem, 1fr) repeat(10, minmax(-webkit-min-content, 14rem)) minmax(6rem, 1fr);
-      grid-template-columns: minmax(6rem, 1fr) repeat(10, minmax(min-content, 14rem)) minmax(6rem, 1fr);
+  -ms-grid-rows: (min-content)[3];
+      grid-template-rows: repeat(3, -webkit-min-content);
+      grid-template-rows: repeat(3, min-content);
+  -ms-grid-columns: [full-start] minmax(6rem, 1fr) [center-start] ([col-start] minmax(min-content, 14rem) [col-end])[10] [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.header {
+  padding: 10rem 0;
+  background-color: #f3fbff;
+  grid-column: full-start / full-end;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: minmax(5rem, 30rem) (minmax(min-content, 12rem))[10] minmax(5rem, 30rem);
+      grid-template-columns: minmax(5rem, 30rem) repeat(10, minmax(-webkit-min-content, 12rem)) minmax(5rem, 30rem);
+      grid-template-columns: minmax(5rem, 30rem) repeat(10, minmax(min-content, 12rem)) minmax(5rem, 30rem);
+}
+
+.header__text-box {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2/8;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 3rem;
+  justify-items: start;
+}
+
+.header__text-box p {
+  max-width: 85%;
+}
+
+.header__illustration {
+  grid-column: 8 / -1;
+}
+
+.heading-1 {
+  font-size: 6.2rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.2;
+}
+
+.heading-1--blue {
+  color: #164dbc;
+}
+
+.heading-1--yellow {
+  color: #fdcc27;
+}
+
+.paragraph {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.btn:link, .btn:visited {
+  padding: 1rem 2rem;
+  font-size: 2.2rem;
+  text-decoration: none;
+  background-color: #057bb2;
+  color: #fff;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */
