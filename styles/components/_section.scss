@@ -1,18 +1,19 @@
 .section-covid-about {
-    margin-bottom: 10rem;
-    padding: 5rem 10rem;
-    background-color: $color-primary-light-1;
-    grid-column:  main-full-start/main-full-end;
+  grid-column: main-full-start/main-full-end;
+  padding: 5rem 10rem;
+  background-color: $color-primary-light-1;
 
-    display: grid;
-    column-gap: 10rem;
-    justify-content: center;
-    grid-template-columns: 
-        [illustration-start] min-content [illustration-end text-start] 
-        minmax(min-content, 50rem) [text-end]; 
-       
+  display: grid;
+  column-gap: 10rem;
+  justify-content: center;
+  grid-template-columns: min-content minmax(min-content, 50rem);
+  align-items: center;
+}
 
-
-    
-    align-items: center;
+.section-covid-info {
+  padding: 8rem 0;
+  grid-column: main-center-start/main-center-end;
+  display: grid;
+  row-gap: 2.5rem;
+  justify-items: center;
 }

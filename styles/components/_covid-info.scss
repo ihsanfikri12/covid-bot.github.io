@@ -1,0 +1,29 @@
+.covid-info {
+  &__information {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  &__icon-item {
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  &__icon-box {
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.25);
+    padding: 2rem 4.2rem 6.3rem;
+  }
+
+  &__icon {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    text-align: center;
+    max-width: 48%;
+  }
+}

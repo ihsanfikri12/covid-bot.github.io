@@ -1,33 +1,31 @@
 .covid-about {
-    
-    &__illustration {
-        grid-column: illustration-start / illustration-end
-    }
+  &__illustration {
+    grid-column: 1/2;
+  }
 
-    &__text-box {
-        grid-column: text-start / text-end;
-        
-        display: grid;
-        row-gap: 2rem;
-    }
+  &__text-box {
+    grid-column: 2/-1;
 
-    &__list{
-        list-style: none;
-        display: grid;
-        row-gap: 2rem;
-    }
+    display: grid;
+    row-gap: 2rem;
+  }
 
-    &__item {
-        display: flex;
-        align-items: center;
-        gap: 2.5rem;
+  &__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content 1fr;
+    row-gap: 2.5rem;
+    column-gap: 2rem;
+  }
 
-    }
+  &__number {
+    display: inline-block;
+    color: $color-secondary;
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
 
-    &__number {
-        display: inline-block;
-        color: $color-secondary;
-        font-size: 4.5rem;
-        font-weight: 700;
-    }
+  &__text {
+    font-size: 1.7rem;
+  }
 }

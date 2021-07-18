@@ -17,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   color: #3a3d46;
 }
 
@@ -76,10 +76,9 @@ body {
 }
 
 .section-covid-about {
-  margin-bottom: 10rem;
+  grid-column: main-full-start/main-full-end;
   padding: 5rem 10rem;
   background-color: #f3fbff;
-  grid-column: main-full-start/main-full-end;
   display: -ms-grid;
   display: grid;
   -webkit-column-gap: 10rem;
@@ -87,12 +86,21 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: [illustration-start] min-content [illustration-end text-start] minmax(min-content, 50rem) [text-end];
-      grid-template-columns: [illustration-start] -webkit-min-content [illustration-end text-start] minmax(-webkit-min-content, 50rem) [text-end];
-      grid-template-columns: [illustration-start] min-content [illustration-end text-start] minmax(min-content, 50rem) [text-end];
+  -ms-grid-columns: min-content minmax(min-content, 50rem);
+      grid-template-columns: -webkit-min-content minmax(-webkit-min-content, 50rem);
+      grid-template-columns: min-content minmax(min-content, 50rem);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.section-covid-info {
+  padding: 8rem 0;
+  grid-column: main-center-start/main-center-end;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2.5rem;
+  justify-items: center;
 }
 
 .heading-1 {
@@ -116,50 +124,70 @@ body {
   color: #fdcc27;
 }
 
-.paragraph {
-  font-weight: 400;
-}
-
 .heading-2 {
   font-size: 3.6rem;
   color: #164dbc;
 }
 
+.heading-4 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
 .btn:link, .btn:visited {
   padding: 1rem 2rem;
-  font-size: 2.2rem;
   text-decoration: none;
+  border-radius: 8px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn--blue {
   background-color: #057bb2;
   color: #fff;
-  border-radius: 8px;
+  -webkit-box-shadow: 0 0.7rem 1rem rgba(5, 123, 178, 0.25);
+          box-shadow: 0 0.7rem 1rem rgba(5, 123, 178, 0.25);
+}
+
+.btn--yellow {
+  background-color: #fdcc27;
+  color: #3a3d46;
+  -webkit-box-shadow: 0 0.7rem 1rem rgba(58, 61, 70, 0.25);
+          box-shadow: 0 0.7rem 1rem rgba(58, 61, 70, 0.25);
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 .covid-about__illustration {
-  grid-column: illustration-start / illustration-end;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
 }
 
 .covid-about__text-box {
-  grid-column: text-start / text-end;
+  grid-column: 2/-1;
   display: -ms-grid;
   display: grid;
   row-gap: 2rem;
 }
 
 .covid-about__list {
-  list-style: none;
   display: -ms-grid;
   display: grid;
-  row-gap: 2rem;
-}
-
-.covid-about__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2.5rem;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
+  row-gap: 2.5rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
 }
 
 .covid-about__number {
@@ -167,5 +195,44 @@ body {
   color: #fdcc27;
   font-size: 4.5rem;
   font-weight: 700;
+}
+
+.covid-about__text {
+  font-size: 1.7rem;
+}
+
+.covid-info__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.covid-info__icon-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  text-align: center;
+}
+
+.covid-info__icon-box {
+  width: 20rem;
+  height: 20rem;
+  -webkit-box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.25);
+  padding: 2rem 4.2rem 6.3rem;
+}
+
+.covid-info__icon {
+  margin-bottom: 2rem;
+}
+
+.covid-info__text {
+  text-align: center;
+  max-width: 48%;
 }
 /*# sourceMappingURL=style.css.map */
