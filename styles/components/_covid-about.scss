@@ -1,0 +1,33 @@
+.covid-about {
+    
+    &__illustration {
+        grid-column: illustration-start / illustration-end
+    }
+
+    &__text-box {
+        grid-column: text-start / text-end;
+        
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    &__list{
+        list-style: none;
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+
+    }
+
+    &__number {
+        display: inline-block;
+        color: $color-secondary;
+        font-size: 4.5rem;
+        font-weight: 700;
+    }
+}

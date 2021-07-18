@@ -1,0 +1,18 @@
+.section-covid-about {
+    margin-bottom: 10rem;
+    padding: 5rem 10rem;
+    background-color: $color-primary-light-1;
+    grid-column:  main-full-start/main-full-end;
+
+    display: grid;
+    column-gap: 10rem;
+    justify-content: center;
+    grid-template-columns: 
+        [illustration-start] min-content [illustration-end text-start] 
+        minmax(min-content, 50rem) [text-end]; 
+       
+
+
+    
+    align-items: center;
+}

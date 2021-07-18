@@ -5,6 +5,8 @@ $color-primary-light-2: #057bb2;
 
 $color-secondary: #fdcc27;
 
+$color-background : F8F8FD;
+
 $color-black: #3a3d46;
 $color-white: #fff;
 
@@ -29,6 +31,7 @@ body {
   font-family: $font-primary;
   font-weight: 400;
   line-height: 1.6;
+  font-size: 1.6rem;
   color: $color-black;
 }
 

@@ -1,4 +1,13 @@
+// -- Base Setting --
 @import "./components/base";
+
+// -- Layout Setting --
 @import "./components/header";
+@import "./components/main";
+@import "./components/section";
+
+// -- Component Setting
 @import "./components/typhography";
 @import "./components/button";
+@import "./components/covid-about";
+

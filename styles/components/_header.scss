@@ -1,13 +1,13 @@
 .header {
-  padding: 10rem 0;
+  padding: 10rem;
   background-color: $color-primary-light-1;
   grid-column: full-start / full-end;
 
   display: grid;
   align-items: center;
   grid-template-columns:
-    minmax(5rem, 30rem) repeat(10, minmax(min-content, 12rem))
-    minmax(5rem, 30rem);
+    minmax(5rem, 1fr) repeat(10, minmax(min-content, 12rem))
+    minmax(5rem, 1fr);
 
   &__text-box {
     grid-column: 2/8;
@@ -22,6 +22,6 @@
   }
 
   &__illustration {
-    grid-column: 8 / -1;
+    grid-column: 8 / -2;
   }
 }
