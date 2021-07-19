@@ -1,6 +1,10 @@
 .covid-about {
   &__illustration {
     grid-column: 1/2;
+
+    @media only screen and (max-width: 68.75em) {
+      grid-column: 1/ -1;
+    }
   }
 
   &__text-box {
@@ -8,6 +12,15 @@
 
     display: grid;
     row-gap: 2rem;
+
+    @media only screen and (max-width: 68.75em) {
+      grid-column: 1/ -1;
+      justify-items: center;
+
+      h2 {
+        text-align: center;
+      }
+    }
   }
 
   &__list {
@@ -16,6 +29,11 @@
     grid-template-columns: min-content 1fr;
     row-gap: 2.5rem;
     column-gap: 2rem;
+
+    @media only screen and (max-width: 68.75em) {
+      row-gap: 1rem;
+      max-width: 60%;
+    }
   }
 
   &__number {
@@ -27,5 +45,9 @@
 
   &__text {
     font-size: 1.7rem;
+  }
+
+  &__img {
+    max-width: 60rem;
   }
 }

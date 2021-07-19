@@ -1,4 +1,5 @@
 .section-covid-about {
+  margin-bottom: 18rem;
   grid-column: main-full-start/main-full-end;
   padding: 5rem 10rem;
   background-color: $color-primary-light-1;
@@ -6,14 +7,24 @@
   display: grid;
   column-gap: 10rem;
   justify-content: center;
-  grid-template-columns: min-content minmax(min-content, 50rem);
+  grid-template-columns: max-content minmax(min-content, 50rem);
   align-items: center;
+
+  @media only screen and (max-width: 68.75em) {
+    grid-template-columns: minmax(min-content, 100rem);
+    justify-items: center;
+    row-gap: 10rem;
+  }
 }
 
 .section-covid-info {
-  padding: 8rem 0;
   grid-column: main-center-start/main-center-end;
+  padding: 8rem 0;
   display: grid;
   row-gap: 2.5rem;
   justify-items: center;
+
+  @media only screen and (max-width: 68.75em) {
+    row-gap: 3rem;
+  }
 }

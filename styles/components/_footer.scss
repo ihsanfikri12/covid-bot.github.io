@@ -1,0 +1,21 @@
+.footer {
+  padding: 2rem 4rem;
+  grid-column: full-start/full-end;
+  background-color: $color-primary-light-2;
+
+  font-size: 1.6rem;
+  text-align: center;
+  color: $color-white;
+
+  &__copyright {
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+  }
+}

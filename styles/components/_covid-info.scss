@@ -1,14 +1,18 @@
 .covid-info {
   &__information {
     display: flex;
-    gap: 4rem;
+    gap: 8rem;
     align-items: center;
   }
 
   &__icon-item {
+    padding: 4rem 0;
     display: flex;
     gap: 4rem;
     text-align: center;
+    @media only screen and (max-width: 68.75em) {
+      flex-direction: column;
+    }
   }
 
   &__icon-box {
@@ -18,12 +22,24 @@
     padding: 2rem 4.2rem 6.3rem;
   }
 
-  &__icon {
-    margin-bottom: 2rem;
-  }
+  // &__icon {
+  //   margin-bottom: 2rem;
+
+  //   @media only screen and (max-width: 68.75em) {
+  //     margin-bottom: 0;
+  //   }
+  // }
 
   &__text {
     text-align: center;
     max-width: 48%;
+  }
+
+  &__img {
+    max-width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 }
