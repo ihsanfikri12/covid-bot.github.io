@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Seirama</title>
+  </head>
+  <body class="container">
+    <nav class="nav">
+      <a href="#"
+        ><img src="./img/Logo.png" alt="Logo Seirama" class="nav__logo"
+      /></a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Contribute</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Info</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Article</a></li>
+      </ul>
+      <a href="#" class="btn btn--blue">Chat Bot</a>
+    </nav>
+    <header class="get-info">
+      <!-- <div class="get__text-box"> -->
+      <h2 class="heading-2">Dapatkan Informasi Terbaru</h2>
+      <p>
+        Informasi seputar ketersedian ICU, Oksigen, Vaksis, dan Donor Darah bagi
+        pasien Covid-19 . Anda juga bisa
+        <span class="text--yellow">berkontribusi</span> informasi.
+      </p>
+      <!-- </div> -->
+      <form action="#" class="form">
+        <!-- <label class="form__label" for="province">
+          <img src="./img/bx_bx-map.png" alt="Maps" class="form__icon" />
+        </label> -->
+        <!-- <input
+          class="form__province"
+          type="text"
+          name="province"
+          placeholder="Provinsi"
+        /> -->
+        <select name="province" id="province" required>
+          <option value="" selected disabled>Province</option>
+          <option value="jakarta">Jakarta</option>
+          <option value="jawa barat">Jawa Barat</option>
+          <option value="jawa tengah">Jawa Tengah</option>
+        </select>
+        <select name="city" id="city" required>
+          <option value="" selected disabled>Kota</option>
+          <option value="bekasi">Bekasi</option>
+          <option value="depok">Depok</option>
+          <option value="semarang">Semarang</option>
+        </select>
+      </form>
+    </header>
+    <div class="information">
+      <div class="information__title">
+        <img
+          src="./img/Bookmark.png"
+          alt="Icon Bookmark"
+          class="information__icon"
+        />
+        <h3 class="heading-3">Informasi Terupdate</h3>
+      </div>
+      <div class="information__table">
+        <div class="information__table-data">
+          <p>No</p>
+          <p>Nama</p>
+          <p>Alamat</p>
+          <p>Contact</p>
+          <p>Date</p>
+        </div>
+        <div class="information__table-data">
+          <p>1</p>
+          <p>Hospital Nurul Fikri</p>
+          <p>
+            Jl. Haji Saidi I, RT.11/RW.7, Cipete Utara, Kec. Kby. Baru, Jakarta,
+            Daerah Khusus Ibukota Jakarta 12410
+          </p>
+          <p>052554521552</p>
+          <p>03/03/2021</p>
+        </div>
+        <div class="information__table-data">
+          <p>2</p>
+          <p>Hospital Hikmah</p>
+          <p>
+            Jl. Belibis Terusan No.53 A, RT.9/RW.3, Palmerah, Kec. Palmerah,
+            Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11480
+          </p>
+          <p>052554521552</p>
+          <p>03/03/2021</p>
+        </div>
+        <div class="information__table-data">
+          <p>3</p>
+          <p>Puskesmas Damanik</p>
+          <p>
+            Jl. Alteri No.53 A, RT.9/RW.3, Palmerah, Kec. Palmerah, Kota Jakarta
+            Barat, Daerah Khusus Ibukota Jakarta 11480
+          </p>
+          <p>052554521552</p>
+          <p>03/03/2021</p>
+        </div>
+        <div class="information__table-data">
+          <p>4</p>
+          <p>Bimaristan</p>
+          <p>
+            Jl. Setu Indah No.53 A, RT.9/RW.3, Palmerah, Kec. Palmerah, Kota
+            Jakarta Barat, Daerah Khusus Ibukota Jakarta 11480
+          </p>
+          <p>052554521552</p>
+          <p>03/03/2021</p>
+        </div>
+        <div class="information__table-data">
+          <p>5</p>
+          <p>Ibn Haytam</p>
+          <p>
+            Jl. Setu Indah No.53 A, RT.9/RW.3, Palmerah, Kec. Palmerah, Kota
+            Jakarta Barat, Daerah Khusus Ibukota Jakarta 11480
+          </p>
+          <p>052554521552</p>
+          <p>03/03/2021</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

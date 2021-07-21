@@ -1,0 +1,13 @@
+.get-info {
+  padding: 20rem 50rem;
+  background-color: $color-primary-light-1;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 2rem;
+
+  h2 {
+    justify-self: start;
+  }
+}

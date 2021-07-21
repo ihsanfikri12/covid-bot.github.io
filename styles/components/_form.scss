@@ -1,0 +1,35 @@
+.form {
+  margin-top: 2rem;
+  background-color: $color-white;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 110%;
+  box-shadow: 0 0.7rem 1rem rgba($color-black, 0.25);
+  align-items: center;
+
+  select {
+    background-color: $color-white;
+    width: 35%;
+    padding: 1.5rem 2rem;
+    border: none;
+    text-align: center;
+    outline: none;
+
+    font-size: 2.2rem;
+    font-family: $font-primary;
+    border-right: 1px solid rgba($color-black, 0.25);
+
+    &:required:invalid {
+      color: gray;
+    }
+
+    option[value=""][disabled] {
+      display: none;
+    }
+
+    option {
+      color: $color-black;
+    }
+  }
+}

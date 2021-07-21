@@ -6,7 +6,7 @@
   line-height: 1.2;
 
   &--blue {
-    color: $color-primary;
+    color: $color-black;
   }
 
   &--yellow {
@@ -19,7 +19,17 @@
   color: $color-primary;
 }
 
+.heading-3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
 .heading-4 {
   font-weight: 400;
   font-size: 1.8rem;
+}
+
+.text--yellow {
+  color: $color-secondary;
+  font-weight: 600;
 }
