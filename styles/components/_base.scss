@@ -48,6 +48,7 @@ body {
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns:
     [full-start] minmax(6rem, 1fr)

@@ -13,6 +13,10 @@
     justify-items: center;
   }
 
+  @media only screen and (max-width: 43.75em) {
+    padding: 12rem 2rem;
+  }
+
   &__text-box {
     grid-column: 2/8;
 
@@ -31,8 +35,8 @@
     p {
       max-width: 85%;
 
-      @media only screen and (max-width: 68.75em) {
-        max-width: 50%;
+      @media only screen and (max-width: 43.75em) {
+        max-width: 90%;
       }
     }
   }

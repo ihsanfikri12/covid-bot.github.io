@@ -2,23 +2,48 @@
   margin-top: 2rem;
   background-color: $color-white;
   display: flex;
-  padding: 0.5rem;
   border-radius: 10px;
   width: 110%;
   box-shadow: 0 0.7rem 1rem rgba($color-black, 0.25);
   align-items: center;
 
-  select {
-    background-color: $color-white;
-    width: 35%;
-    padding: 1.5rem 2rem;
+  @media only screen and (max-width: 62.5em) {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  select,
+  button {
     border: none;
     text-align: center;
     outline: none;
 
-    font-size: 2.2rem;
     font-family: $font-primary;
+    font-size: 2.2rem;
+  }
+
+  button {
+    margin: 2rem;
+    width: 30%;
+
+    @media only screen and (max-width: 62.5em) {
+      width: 100%;
+    }
+  }
+
+  select {
+    background-color: $color-white;
+    width: 35%;
+    padding: 1.5rem 2rem;
     border-right: 1px solid rgba($color-black, 0.25);
+
+    @media only screen and (max-width: 62.5em) {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid rgba($color-black, 0.25);
+    }
 
     &:required:invalid {
       color: gray;
